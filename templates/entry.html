@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/lotto'>
+
+<br>
+<h2>로또 번호 랜덤 추첨</h2>
+<p>인생역전! LOTTO 번호 생성기!</p>
+
+<table>
+<P>사고싶은 장수만큼 입력하세요.</P>
+<tr><input name='won' type='TEXT' value=''>장</tr>
+</table>
+
+<p><input value='생성!' type='SUBMIT'></p>
+</from>
+
+{% endblock %}
